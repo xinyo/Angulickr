@@ -1,0 +1,26 @@
+<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="{{intervalTime}}">
+	<!-- Indicators -->
+	<ol class="carousel-indicators">
+		<li data-target="#myCarousel" ng-class="{active:$first}" ng-repeat="x in photo" data-slide-to="{{$index}}" ></li>
+	</ol>
+	<!-- Wrapper for slides -->
+	<div class="carousel-inner" >
+		<div class="item" ng-class="{active:$first}" ng-repeat="x in photo">
+			<img class="lightbox_trigger" src="https://farm{{x.farm-id}}.staticflickr.com/{{x.server-id}}/{{x.id}}_{{x.secret}}_b.jpg" alt="{{x.title}}" cla"carousel-img">
+			<div class="carousel-caption">
+				<!-- <span>{{x.title}}</span> //customize to show photo information-->
+			</div>
+		</div>
+	</div>
+	<!-- Controls -->
+	<a class="left carousel-control" href="#myCarousel" data-slide="prev">
+		<span class="glyphicon glyphicon-chevron-left"></span>
+	</a>
+	<a class="right carousel-control" href="#myCarousel" data-slide="next">
+		<span class="glyphicon glyphicon-chevron-right"></span>
+	</a>
+</div>
+
+<!--Author information-->	
+<p class="text-center">Share by: <a href="https://www.flickr.com/photos/{{user_id}}/" target="_blank">{{photoset.ownername}}</a> @flickr.com | Photoset: <a href="https://www.flickr.com/photos/{{user_id}}/sets/{{photoset_id}}" target="_blank">{{photoset.title}}</a></p>
+
