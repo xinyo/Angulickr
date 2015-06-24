@@ -1,0 +1,30 @@
+<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="{{intervalTime}}">
+	<!-- Wrapper for slides -->
+	<div class="carousel-inner" >
+		<div class="item" ng-class="{active:$first}" ng-repeat="x in photo">
+			<img src="https://farm{{x.farm-id}}.staticflickr.com/{{x.server-id}}/{{x.id}}_{{x.secret}}_b.jpg" alt="{{x.title}}" cla"carousel-img">
+			<div class="carousel-caption">
+				<!-- <span>{{x.title}}</span> -->
+			</div>
+		</div>
+	</div>
+	<!-- Controls -->
+	<a class="left carousel-control" href="#myCarousel" data-slide="prev">
+		<span class="glyphicon glyphicon-chevron-left"></span>
+	</a>
+	<a class="right carousel-control" href="#myCarousel" data-slide="next">
+		<span class="glyphicon glyphicon-chevron-right"></span>
+	</a>
+</div>
+<!-- Indicators -->
+	<ol class="carousel-indicators">
+		<li data-target="#myCarousel" ng-class="{active:$first}" ng-repeat="x in photo" data-slide-to="{{$index}}" ><img src="https://farm{{x.farm-id}}.staticflickr.com/{{x.server-id}}/{{x.id}}_{{x.secret}}_s.jpg" alt="{{x.Name}}"></li>
+	</ol>
+<p class="text-center">Share by: <a href="https://www.flickr.com/photos/{{user_id}}/" target="_blank">{{photoset.ownername}}</a> @flickr.com | Photoset: <a href="https://www.flickr.com/photos/{{user_id}}/sets/{{photoset_id}}" target="_blank">{{photoset.title}}</a></p>
+
+<div id="lightbox">
+    <p>Click to close</p>
+    <div id="content">
+        <img src="#" />
+    </div>
+</div>
