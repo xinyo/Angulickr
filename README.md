@@ -1,13 +1,16 @@
 # Angulickr
-carousel with thumbnails
+carousel with thumbnails & lightbox
+## [Live Demo](http://xinyo.net.au/xinyo/farm/demo.html)
 
-*Fully responsive
-*Customizable
-*Superlight weight 
-rely on Bootstrap&AngularJS, so it would be good for you if use these libraries(otherwise there are many good plugin you can choose)
+### Feature
+* Fully responsive
+* Customizable
+* Superlight weight
+
+Rely on Bootstrap&AngularJS, so it would be good for you if use these libraries(otherwise there are many good plugin you can choose)
 Licensed under MIT, code is free for commercial & personal use. However, it would be great if you send me an link of your websites so I can see it live in action and post as examples here. I am also happy about github-stars.
 
-# Copyright (C) 2015  Xinyo
+### Copyright (C) 2015  Xinyo
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
