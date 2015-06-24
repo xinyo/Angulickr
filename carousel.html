@@ -2,9 +2,9 @@
 	<!-- Wrapper for slides -->
 	<div class="carousel-inner" >
 		<div class="item" ng-class="{active:$first}" ng-repeat="x in photo">
-			<img src="https://farm{{x.farm-id}}.staticflickr.com/{{x.server-id}}/{{x.id}}_{{x.secret}}_b.jpg" alt="{{x.title}}" cla"carousel-img">
+			<img class="lightbox_trigger" src="https://farm{{x.farm-id}}.staticflickr.com/{{x.server-id}}/{{x.id}}_{{x.secret}}_b.jpg" alt="{{x.title}}" cla"carousel-img">
 			<div class="carousel-caption">
-				<!-- <span>{{x.title}}</span> -->
+				<!-- <span>{{x.title}}</span> //customize to show photo information-->
 			</div>
 		</div>
 	</div>
@@ -18,13 +18,8 @@
 </div>
 <!-- Indicators -->
 	<ol class="carousel-indicators">
-		<li data-target="#myCarousel" ng-class="{active:$first}" ng-repeat="x in photo" data-slide-to="{{$index}}" ><img src="https://farm{{x.farm-id}}.staticflickr.com/{{x.server-id}}/{{x.id}}_{{x.secret}}_s.jpg" alt="{{x.Name}}"></li>
+		<li data-target="#myCarousel" ng-class="{active:$first}" ng-repeat="x in photo" data-slide-to="{{$index}}" ><img src="https://farm{{x.farm-id}}.staticflickr.com/{{x.server-id}}/{{x.id}}_{{x.secret}}_s.jpg" alt="{{x.title}}"></li>
 	</ol>
+<!--Author information-->	
 <p class="text-center">Share by: <a href="https://www.flickr.com/photos/{{user_id}}/" target="_blank">{{photoset.ownername}}</a> @flickr.com | Photoset: <a href="https://www.flickr.com/photos/{{user_id}}/sets/{{photoset_id}}" target="_blank">{{photoset.title}}</a></p>
 
-<div id="lightbox">
-    <p>Click to close</p>
-    <div id="content">
-        <img src="#" />
-    </div>
-</div>
