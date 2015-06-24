@@ -3,11 +3,19 @@ carousel with thumbnails & lightbox
 ## [Live Demo](http://xinyo.net.au/xinyo/farm/demo.html)
 
 ### Feature
-* Fully responsive
+* Flickr Photo Management
+* Fully Responsive
 * Customizable
-* Superlight weight
+* Super Lightweight (Light version only 3kb)
+* Thumbnails
+* Simple Lightbox
 
-Rely on Bootstrap&AngularJS, so it would be good for you if use these libraries(otherwise there are many good plugin you can choose)
+Rely on Bootstrap & AngularJS, so it would be good if you use these libraries for your applications(otherwise there are many good lightweight plugin you can choose)
+Thumbnails navigation and simple lightbox is not necessary, just download 'light' folder to use.
+## [without Lightbox](http://xinyo.net.au/xinyo/farm/gallery2.html)
+## [Super Lightweight](http://xinyo.net.au/xinyo/farm/light/gallery1.html)
+Beware to use Flickr standard applications key for commercial purpose.
+
 Licensed under MIT, code is free for commercial & personal use. However, it would be great if you send me an link of your websites so I can see it live in action and post as examples here. I am also happy about github-stars.
 
 ### Copyright (C) 2015  Xinyo
